@@ -1,5 +1,4 @@
-body{
-	
+body{	
 	background: hsla(92, 73%, 53%,.92) border-box;
 }
 
@@ -25,7 +24,7 @@ body{
 }
 .nav-left{		
 	margin-top:10px;
-	padding-top:10px;	
+	padding-top:10px;		
 }
 .nav-left .list-group-item{	
 	background-color:rgba(135, 179, 61, 0.32);
@@ -39,7 +38,15 @@ body{
 }
 
 .tab-content{
-	margin-top:20px;	
+	margin-top:50px;	
+}
+#about li{		
+	float:left;
+	text-align:justify;
+}
+#others{
+	text-indent:2em;
+	margin:10px 10px;
 }
 .centered img{
 	width:160px;
