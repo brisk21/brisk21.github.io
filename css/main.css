@@ -1,84 +1,104 @@
-body{	
-	background: hsla(92, 73%, 53%,.92) border-box;
+body {
+	background: hsla(92, 73%, 53%, .92) border-box;	
+	background-image: url(../img/bg.jpg);
+	background-size:cover;	
 }
 
-.content {	
-	width:50%;
-	
-	margin:150px auto;
-	background: hsla(346, 100%, 50%, 0.25) border-box;
-	border:1px solid gray;	
-	box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
-				0 .5em 1em rgba(0, 0, 0, 0.6);
-	text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
-	border-radius:25px;
-	
-}
-.leftpart{		
-	text-align:center;
+.content {
+	width: 50%;
+	margin: 150px auto;
+	background: hsla(76, 87%, 67%, 0.18) border-box;	
+	border-radius: 25px;
 }
 
-.headerlogo{	
-	height:150px;
-	margin-top:20px;	
+.leftpart {
+	text-align: center;
 }
-.nav-left{		
-	margin-top:10px;
-	padding-top:10px;		
+
+.headerlogo {
+	height: 150px;
+	margin-top: 20px;
+	border-radius: 15%;	
 }
-.nav-left .list-group-item{	
-	background-color:rgba(135, 179, 61, 0.32);
+
+.nav-left {
+	margin-top: 10px;
+	padding-top: 10px;
 }
-.nav-left a{
-	margin-top:5px;	
+
+.nav-left .list-group-item {
+	background-color: rgba(135, 179, 61, 0.32);
 }
-.img-thumbnail{
-	background:#A7AA3D;
+
+.nav-left a {
+	margin-top: 5px;
+}
+
+.img-thumbnail {
+	background: rgba(0,0,0,0);
+	border: none;
+}
+
+.tab-content {
+	margin-top: 50px;
+}
+
+#about li {
+	float: left;
+	text-align: justify;
+	line-height:32px;
+}
+#profile{
+	text-align: center;
+}
+#others {
+	text-indent: 2em;
+	margin: 10px 10px;
+}
+
+.contact,.contact .list-group-item{
+	background: transparent;
+}
+.contact .list-group-item{
 	border:none;
+	border-bottom: 1px solid greenyellow;
 }
-
-.tab-content{
-	margin-top:50px;	
+.rightpart{	
+	color:rgb(40, 62, 48);
 }
-#about li{		
-	float:left;
-	text-align:justify;
-}
-#others{
-	text-indent:2em;
-	margin:10px 10px;
-}
-.centered img{
-	width:160px;
-	height:120px;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width:640px) and (max-width:960px){
-	.content{
-		width:95%;		
-		margin:20px auto;		
+@media only screen and (min-width:640px) and (max-width:950px) {
+	.content {
+		width: 95%;
+		margin: 20px auto;
+		text-align: justify;
 	}
-	.tab-content{	
-		text-align:center;
+	.tab-content {
+		text-align: center;
 	}
-	
+	#others {
+		text-align: justify;
+	}
 }
-@media only screen and (max-device-width: 640px){
-	.content{
-		width:95%;		
-		margin:20px auto;		
+
+@media only screen and (max-device-width: 667px) {
+	.content {
+		width: 100%;
+		margin: 0 auto;
+		border-radius: 0;
+		text-align: justify;
+		color: #000;
 	}
-	.tab-content{	
-		text-align:center;
+	.headerlogo {
+		margin: 10px auto;
+		background: rgba(177, 208, 140, 0)
+	}
+	.nav-left {
+		margin-top: 0px;
+	}
+	.tab-content {
+		text-align: center;
+	}
+	#others{
+		text-align: justify;
 	}
 }
